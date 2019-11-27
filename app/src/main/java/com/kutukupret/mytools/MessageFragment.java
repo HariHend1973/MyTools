@@ -8,6 +8,9 @@ import android.view.ViewGroup;
 import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+
+import com.muddzdev.styleabletoast.StyleableToast;
+
 import androidx.fragment.app.Fragment;
 
 public class MessageFragment extends Fragment {
@@ -26,6 +29,7 @@ public class MessageFragment extends Fragment {
                 handler.proceed();
             }
         });
+        StyleableToast.makeText(getActivity(), "Open mikhmon", R.style.exampleToast).show();
         return view;
     }
 }

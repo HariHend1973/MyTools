@@ -17,6 +17,7 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.navigation.NavigationView;
+import com.muddzdev.styleabletoast.StyleableToast;
 
 import androidx.drawerlayout.widget.DrawerLayout;
 
@@ -70,10 +71,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         new ProfileFragment()).commit();
                 break;
             case R.id.nav_share:
-                Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
+                StyleableToast.makeText(this, "Share", R.style.exampleToast).show();
                 break;
             case R.id.nav_send:
-                Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
+                StyleableToast.makeText(this, "Send", R.style.exampleToast).show();
                 break;
         }
 
@@ -88,5 +91,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else {
             super.onBackPressed();
         }
+    }
+
+    public void showToast(View v) {
+        StyleableToast.makeText(this, "Hello World!", R.style.exampleToast).show();
     }
 }

@@ -9,6 +9,8 @@ import android.webkit.SslErrorHandler;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
+import com.muddzdev.styleabletoast.StyleableToast;
+
 import androidx.fragment.app.Fragment;
 
 public class ChatFragment extends Fragment {
@@ -29,6 +31,8 @@ public class ChatFragment extends Fragment {
         });
 
         wv_pihole.loadUrl(URL);
+
+        StyleableToast.makeText(getActivity(), "Open pihole", R.style.exampleToast).show();
         return view;
     }
 }
