@@ -13,4 +13,10 @@
     <string name="menu_tools">Tools</string>
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
+    <string name="save">save</string>
+    <string name="mikhmon_url">mikhmon url</string>
+    <string name="pihole_url">pihole url</string>
+    <string name="mikhmon">mikhmon</string>
+    <string name="pihole">pihole</string>
+    <string name="enter_your_mikhmon_amp_pihole_url"><![CDATA[Enter your mikhmon & pihole url]]></string>
 </resources>

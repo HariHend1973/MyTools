@@ -16,6 +16,10 @@
             android:id="@+id/nav_profile"
             android:icon="@drawable/ic_profile"
             android:title="Kutukupret" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Setting" />
     </group>
 
     <item android:title="Kontak">

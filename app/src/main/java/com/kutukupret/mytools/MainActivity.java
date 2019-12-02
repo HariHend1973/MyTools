@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new MessageFragment()).commit();
-            navigationView.setCheckedItem(R.id.nav_message);
+                    new SettingsFragment()).commit();
+            navigationView.setCheckedItem(R.id.nav_settings);
         }
     }
 
@@ -69,6 +69,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_profile:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new ProfileFragment()).commit();
+                break;
+            case R.id.nav_settings:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SettingsFragment()).commit();
                 break;
             case R.id.nav_share:
                 //Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();

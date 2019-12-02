@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tvheadtop_mikhmon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_your_mikhmon_amp_pihole_url"
+        android:textSize="15sp"
+        android:layout_marginBottom="20dp"
+        tools:text="Enter your mikhmon &amp; pihole url" />
+
+    <TextView
+        android:id="@+id/tvhead_mikhmon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/mikhmon_url"
+        android:textSize="12sp"
+        tools:text="mikhmon url" />
+
+    <EditText
+        android:id="@+id/et_mikhmon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/mikhmon"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tv_mikhmon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        tools:text="mikhmon url"/>
+
+    <TextView
+        android:id="@+id/tvhead_pihole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/pihole_url"
+        android:textSize="12sp"
+        android:layout_marginTop="50dp"
+        tools:text="pihole url" />
+
+    <EditText
+        android:id="@+id/et_pihole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/pihole"
+        android:textSize="12sp"
+        android:layout_margin="10dp"
+        android:importantForAutofill="no" />
+
+    <TextView
+        android:id="@+id/tv_pihole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="12sp"
+        tools:text="pihole url"/>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/save" />
+
+</LinearLayout>
