@@ -20,6 +20,18 @@
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings"
             android:title="Setting" />
+        <item
+            android:id="@+id/nav_tikapp"
+            android:icon="@drawable/ic_tikapp"
+            android:title="Mikrotik" />
+        <item
+            android:id="@+id/nav_speedtest"
+            android:icon="@drawable/ic_speedtest"
+            android:title="Speedtest" />
+        <item
+            android:id="@+id/nav_vpn"
+            android:icon="@drawable/ic_vpn"
+            android:title="Vpn" />
     </group>
 
     <item android:title="Kontak">

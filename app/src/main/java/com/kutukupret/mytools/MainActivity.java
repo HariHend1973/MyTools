@@ -1,5 +1,7 @@
 package com.kutukupret.mytools;
 
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -73,6 +75,27 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_settings:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new SettingsFragment()).commit();
+                break;
+            case R.id.nav_tikapp:
+                PackageManager pm_tikapp = getPackageManager();
+                Intent intent_tikapp = pm_tikapp.getLaunchIntentForPackage("com.mikrotik.android.tikapp");
+                if (intent_tikapp != null) {
+                    startActivity(intent_tikapp);
+                }
+                break;
+            case R.id.nav_speedtest:
+                PackageManager pm_speedtest = getPackageManager();
+                Intent intent_speedtest = pm_speedtest.getLaunchIntentForPackage("org.zwanoo.android.speedtest");
+                if (intent_speedtest != null) {
+                    startActivity(intent_speedtest);
+                }
+                break;
+            case R.id.nav_vpn:
+                PackageManager pm_vpn = getPackageManager();
+                Intent intent_vpn = pm_vpn.getLaunchIntentForPackage("it.claudio.chimera.vpn");
+                if (intent_vpn != null) {
+                    startActivity(intent_vpn);
+                }
                 break;
             case R.id.nav_share:
                 //Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
