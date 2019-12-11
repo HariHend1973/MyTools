@@ -99,11 +99,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_share:
                 //Toast.makeText(this, "Share", Toast.LENGTH_SHORT).show();
-                StyleableToast.makeText(this, "Share", R.style.exampleToast).show();
+                //StyleableToast.makeText(this, "Share", R.style.exampleToast).show();\
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new ShareFragment()).commit();
                 break;
             case R.id.nav_send:
                 //Toast.makeText(this, "Send", Toast.LENGTH_SHORT).show();
-                StyleableToast.makeText(this, "Send", R.style.exampleToast).show();
+                //StyleableToast.makeText(this, "Send", R.style.exampleToast).show();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new SendFragment()).commit();
                 break;
         }
 
